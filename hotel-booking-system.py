@@ -233,7 +233,7 @@ def add_update_supplementary_items(supplementary_items):
             # Initializing an empty list to store the updated supplementary items which is later updated to the supplementary item dictionary
             supplementary_items_updates = {}
             # using a loop to split the input with commas
-            # .split() function is used here to split the input with white spaces and commas [7]
+            # .split() function is used here to split the input with white spaces and commas 
             for x in seq.split(","):
                 parts = x.strip().split()
                 if len(parts) != 2:  # Adding a check where the length of the supplementary item information must be equal to 2, raises an error if != 2
@@ -247,7 +247,7 @@ def add_update_supplementary_items(supplementary_items):
             print("Error: please use 'id, price' with positive numbers.")
             continue
 
-        # .update() function is used for supplementary_item dictionary which is updated with values from the supplementary_items_updates dictionary [4]
+        # .update() function is used for supplementary_item dictionary which is updated with values from the supplementary_items_updates dictionary 
         supplementary_items.update(supplementary_items_updates)
         print("Supplementary Items updated")
         break
@@ -288,7 +288,7 @@ def display_apartment_units(apartments):
         print("No apartments found")
         return
     # A for loop is used to loop over the dictionary and retrieve values in the dictionary with the help of the .items() function, which is used to print the rate and capacity of an apartment unit at the hotel.
-    # .items() function is used to access the values inside a dictionary [3]
+    # .items() function is used to access the values inside a dictionary 
     for apartment_id, info in apartments.items():
         rate = info.get("rate")
         capacity = info.get("capacity")
@@ -314,7 +314,6 @@ def display_supplementary_items(supplementary_items):
     print("========================================")
 
 
-# Bed capacity check solution. Gained inspirations and ideas from ChatGPT [6]
 def bed_capacity_check(apartments, apartment_id, number_of_guests, supplementary_items, supplementary_items_ordered, supplementary_items_sub_total, unit_rate, length_of_stay):
 
     # dictionary look up to find the default capacity which was inisitalized to the apartment
@@ -336,7 +335,7 @@ def bed_capacity_check(apartments, apartment_id, number_of_guests, supplementary
                 break
 
             beds_left = 2 - extra_bed_purchased
-            # Using try/except to validate the type of the number [5]
+            
             try:
                 quantity = int(
                     input(f"How many extra beds (extra beds available - {beds_left})?: "))
@@ -411,7 +410,6 @@ def main():
         "Luigi": 32
     }
 
-    # Using nested dictionaries to store 2 or more values in the apartments dictionary [2]
     apartments = {
         "U12swan": {"rate": 95.0, "capacity": 2},
         "U209duck": {"rate": 106.7, "capacity": 2},
@@ -431,7 +429,7 @@ def main():
 
     # if a valid menu number option is entered it executes one of the following functions linked with the menu number. Functions include the different options to make a booking, add/update supplementary items, apartments, and so on
 
-    # Using a menu driven program [1]
+    # Using a menu driven program
     while True:
         menu()
         choice = menu_choice()
@@ -527,3 +525,4 @@ def booking_receipt(guest_name, number_of_guests, apartment_name, unit_rate, che
 
 if __name__ == "__main__":
     main()
+
