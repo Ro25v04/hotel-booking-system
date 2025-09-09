@@ -42,7 +42,7 @@ It is a **menu-driven console application** built using only Python’s standard
    ```
 
 
-Example Menu:
+## Example Menu:
 
 Welcome to Debugger's Hut Serviced Apartments!
 =============================================================
