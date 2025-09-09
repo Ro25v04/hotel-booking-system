@@ -58,7 +58,7 @@ Please choose from the following options:
 =============================================================
 
 
-Future Improvements:
+## Future Improvements:
 
 1. Save data to a database (SQLite/JSON)
 2. Build a GUI version (Tkinter or PyQt)
