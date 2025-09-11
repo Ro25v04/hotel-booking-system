@@ -30,7 +30,7 @@ It is a **menu-driven console application** built using only Python’s standard
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/YOUR-USERNAME/hotel-booking-system.git
+   git clone https://github.com/Ro25v04/hotel-booking-system.git
 
 2. Navigate into the folder:
    ```bash
