@@ -38,7 +38,7 @@ It is a **menu-driven console application** built using only Python’s standard
    
 3. Run the program:
    ```bash
-   python ProgFunA1_s4173731.py
+   python hotel-booking-system.py
    ```
 
 
